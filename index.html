@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Navigation Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo1x.png" alt="logo">
+            <span>Design Thinking</span>
+            <button id="theButton"></button>
+        </header>
+    </div><!-- end header wrapper -->
+
+
+
+    <div id="navWrapper">
+        <nav>
+            <ul id="theNav">
+                <li><a href="#">Clients</a></li>
+                <li class="parent"><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Brand Identity</a></li>
+                        <li><a href="#">Style Guide</a></li>
+                        <li><a href="#">Design System</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">Best Practices</a></li>
+                <li class="parent"><a href="#">Our Team</a>
+                    <ul>
+                        <li><a href="#">Peter</a></li>
+                        <li><a href="#">Paul</a></li>
+                        <li><a href="#">Pietro</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div> <!-- end nav wrapper -->
+
+    <div id="mainWrapper">
+        <main>
+
+        <h1 class="heroWords">Urban Forestry</h1>
+            
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/small1.jpg" media="(max-width: 400px)">
+                            <source srcset="images/Medium1.jpg" media="(max-width: 800px)">
+                            <img src="images/Large1.jpg">
+                        </picture>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/small2.jpg" media="(max-width: 400px)">
+                            <source srcset="images/medium2.jpg" media="(max-width: 800px)">
+                            <img src="images/large2.jpg">
+                        </picture>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/Small3.jpg" media="(max-width: 400px)">
+                            <source srcset="images/medium3.jpg" media="(max-width: 800px)">
+                            <img src="images/Large3.jpg">
+                        </picture>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/small4.jpg" media="(max-width: 400px)">
+                            <source srcset="images/Medium4.jpg" media="(max-width: 800px)">
+                            <img src="images/large4.jpg">
+                        </picture>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/small5.jpg" media="(max-width: 400px)">
+                            <source srcset="images/Medium5.jpg" media="(max-width: 800px)">
+                            <img src="images/large5.jpg">
+                        </picture>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </main>
+    </div><!-- end main wrapper -->
+
+    <div id="footerWrapper">
+        <footer>
+            <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved.
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a>
+            </p>
+        </footer>
+    </div> <!-- end footer wrapper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js" type="module"></script>
+</body>
+
+</html>
+<!--<div class="swiper-slide"><img src="media/Large1.jpg"></div>
+            <div class="swiper-slide"><img src="media/large2.jpg"></div>
+            <div class="swiper-slide"><img src="media/Large3.jpg"></div>
+            <div class="swiper-slide"><img src="media/large4.jpg"></div>
+            <div class="swiper-slide"><img src="media/large5.jpg"></div>  -->

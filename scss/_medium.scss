@@ -1,0 +1,48 @@
+/* NAVIGATION STUFF GOES HERE  */
+#theButton {
+    display: none;
+}
+#theNav {
+    background-color: $accentColor;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        border-right: 1px solid rgba(0,0,0,0.1);
+    }
+    li a {
+        padding: .9rem 1.2rem;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: rgba(0,0,0,.3);
+    }
+    li.parent > a::before {
+        content: "\25BC";
+        font-size: .65rem;
+        color: rgba(255,255,255, .5);
+    }
+    li.active a {
+        background-color: $secondaryColor;
+    }
+
+    //rules for subheader
+    li ul {
+        background-color: $primaryColor;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        //the position will put the rest of the page under them instead of lengthening the nav bar.
+        left: -999rem;
+        //this left thing throws then super far off the page and the hover that turns the left to auto throws them back to the left and into view
+    }
+    li ul li {
+        border-top: solid 1px rgba(0,0,0,0.5);
+    }
+    li:hover ul {
+        left: auto;
+    }
+}

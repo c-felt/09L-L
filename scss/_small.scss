@@ -31,7 +31,12 @@ header {
     span {
         font-size: 1.6rem;
         font-weight: $lightWeight;
+        font-size: 200%;
         color: $primaryColor;
+        margin-left: 35px;
+    }
+    #ufTitle {
+        display: block;
     }
 } // end header
 
@@ -42,7 +47,7 @@ header {
 main {
     
     .swiper {
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .swiper, .swiper img{
         width: 100%;
@@ -50,7 +55,6 @@ main {
       } 
     .swiper-slide {
         display: relative;
-        border: 3px solid red;
         position: relative;
     }
     .heroWords {
@@ -61,14 +65,13 @@ main {
         width: 100%;
         color: white;
         font-weight: $boldWeight;
-        font-size: 350%;
+        font-size: 250%;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
-
     h1 {
         padding: 1rem $gutter.5rem $gutter;
-        font-size: 1.5rem;
-        color: $secondaryColor;
+        font-size: 1.8rem;
+        color: $primaryColor;
         font-weight: $normalWeight;
         text-align: center;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
@@ -82,10 +85,15 @@ main {
         display: grid;
         section {
             position: relative;
-            margin: 30px;
+            margin: 5px 30px 10px 30px;
             // transition: transform 1s;
             // &:hover {transform: rotate(2deg);}
+            &:hover h2 {
+                color: $primaryColor;
+                text-decoration: underline;
+            }
             h2 {
+                color: $secondaryColor;
                 text-align: center;
                 font-weight: $lightWeight;
                 text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
@@ -122,14 +130,15 @@ main {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-    background-color: $primaryColor
+    background-color: $accentColor;
 } // end footer wrapper
 
 footer {
     font-size: .85rem;
     padding: 1rem $gutter;
-    color: $greyColor;
+    color: white;
     text-align: center;
     line-height: $leading;
-    a {color: $greyColor;}
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    a {color: white; &:hover{color: $primaryColor;}}
 }// end footer

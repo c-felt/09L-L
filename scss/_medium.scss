@@ -1,3 +1,23 @@
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {border-bottom: none}
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        font-size: 250%;
+        color: $primaryColor;
+        margin-left: 35px;
+    }
+    #urbanForestryTitle {
+        display: block;
+    }
+} // end header
+
 /* NAVIGATION STUFF GOES HERE  */
 #theButton {
     display: none;

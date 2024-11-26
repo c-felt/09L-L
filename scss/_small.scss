@@ -19,7 +19,6 @@ body {
     min-width: 320px;
 }
 
-
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
@@ -40,9 +39,6 @@ header {
     }
 } // end header
 
-
-/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
-
 /* --------------------------- MAIN --------------------------- */
 main {
     
@@ -54,11 +50,10 @@ main {
         height: auto;
       } 
     .swiper-slide {
-        display: relative;
         position: relative;
     }
     .heroWords {
-        display: absolute;
+        position: absolute;
         margin: 0;
         position: absolute;
         top: 35%;
@@ -109,7 +104,6 @@ main {
             }
         }
     }
-
     .photoCustomer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -127,12 +121,10 @@ main {
 
 }// end main
     
-
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
     background-color: $accentColor;
 } // end footer wrapper
-
 footer {
     font-size: .85rem;
     padding: 1rem $gutter;

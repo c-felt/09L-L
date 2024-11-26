@@ -77,28 +77,21 @@ header {
         left: auto;
     }
 }
-
 .heroWords {
-    display: absolute;
     margin: 0;
     position: absolute;
     top: 40%;
     width: 30%;
 }
-
 .photoServices {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .photoCustomer {
     section {
         display: grid;
         grid-template-columns: 140px auto;
         column-gap: 4px;
         padding: 10px;
-        // img{
-            
-        // }
     } //end of SECTION
 } //end of parent for customer photos

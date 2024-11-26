@@ -357,7 +357,6 @@ main .swiper-slide {
 main .heroWords {
   position: absolute;
   margin: 0;
-  position: absolute;
   top: 35%;
   width: 100%;
   color: white;
@@ -604,7 +603,6 @@ footer a:hover {
     margin: auto;
   }
   .heroWords {
-    display: absolute;
     margin: 0;
     position: absolute;
     top: 40%;

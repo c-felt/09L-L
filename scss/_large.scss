@@ -7,6 +7,14 @@ header, nav, main {
 
 
 
+.heroWords {
+    display: absolute;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    width: 20%;
+}
+
 /* SERVICES PHOTOS */
 .photoServices {
     display: grid;

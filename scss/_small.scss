@@ -38,80 +38,87 @@ header {
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------- MAIN --------------------------- */
 main {
+    
+    .swiper {
+        margin-top: 15px;
+    }
+    .swiper, .swiper img{
+        width: 100%;
+        height: auto;
+      } 
+    .swiper-slide {
+        display: relative;
+        border: 3px solid red;
+        position: relative;
+    }
+    .heroWords {
+        display: absolute;
+        margin: 0;
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        color: white;
+        font-weight: $boldWeight;
+        font-size: 350%;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
     h1 {
         padding: 1rem $gutter.5rem $gutter;
         font-size: 1.5rem;
         color: $secondaryColor;
         font-weight: $normalWeight;
         text-align: center;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     }
     p {
         padding: .5rem $gutter;
         color: #333;
         line-height: $leading;
     }
-}// end main
-
-    .swiper, .swiper img{
-        width: 100%;
-        height: auto;
-      } 
-// .heroWords {
-// }
-
-.photoServices {
-    display: grid;
-    section {
-        position: relative;
-        margin: 30px;
-        // transition: transform 1s;
-        // &:hover {transform: rotate(2deg);}
-        h2 {
-            text-align: center;
-            font-weight: $lightWeight;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        img:last-child {
-            position: absolute;
-            bottom: 0;
+    .photoServices {
+        display: grid;
+        section {
+            position: relative;
+            margin: 30px;
+            // transition: transform 1s;
+            // &:hover {transform: rotate(2deg);}
+            h2 {
+                text-align: center;
+                font-weight: $lightWeight;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            }
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            img:last-child {
+                position: absolute;
+                bottom: 0;
+            }
         }
     }
-}
 
-.photoCustomer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    section {
-        padding: 7px;
-        img{
-            width: 100%;
-            height: auto;
-            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-            transition: transform 1s;
-            &:hover {transform: rotate(15deg);}
-        }
-    } //end of SECTION
-} //end of parent for customer photos
+    .photoCustomer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        section {
+            padding: 7px;
+            img{
+                width: 100%;
+                height: auto;
+                clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+                transition: transform 1s;
+                &:hover {transform: rotate(15deg);}
+            }
+        } //end of SECTION
+    } //end of parent for customer photos
 
+}// end main
+    
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {

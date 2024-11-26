@@ -344,7 +344,8 @@ main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
   color: #7c1d47;
-  font-weight: 300;
+  font-weight: 500;
+  text-align: center;
 }
 main p {
   padding: 0.5rem 10px;
@@ -355,6 +356,45 @@ main p {
 .swiper, .swiper img {
   width: 100%;
   height: auto;
+}
+
+.photoServices {
+  display: grid;
+}
+.photoServices section {
+  position: relative;
+  margin: 30px;
+}
+.photoServices section h2 {
+  text-align: center;
+  font-weight: 300;
+}
+.photoServices section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.photoServices section img:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+.photoCustomer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.photoCustomer section {
+  padding: 7px;
+}
+.photoCustomer section img {
+  width: 100%;
+  height: auto;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  transition: transform 1s;
+}
+.photoCustomer section img:hover {
+  transform: rotate(15deg);
 }
 
 /* --------------------------- FOOTER --------------------------- */
@@ -479,6 +519,17 @@ footer a {
   #theNav li:hover ul {
     left: auto;
   }
+  .photoServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photoCustomer section {
+    display: grid;
+    grid-template-columns: 140px auto;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+    padding: 10px;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -486,4 +537,18 @@ footer a {
     margin: auto;
   }
   /* NAVIGATION STUFF GOES HERE  */
+  /* SERVICES PHOTOS */
+  .photoServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .photoServices section h2 {
+    text-align: left;
+  }
+  /* CUSTOMER PHOTOS */
+  .photoCustomer section {
+    grid-template-columns: 200px auto;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
 }

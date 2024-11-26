@@ -4,3 +4,23 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+
+
+
+/* SERVICES PHOTOS */
+.photoServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    section{
+        h2 {
+            text-align: left;
+        }
+    }
+}
+/* CUSTOMER PHOTOS */
+.photoCustomer {
+    section {
+        grid-template-columns: 200px auto;
+        column-gap: 8px;
+    } //end of SECTION
+} //end of parent for customer photos

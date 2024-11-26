@@ -57,7 +57,8 @@ main {
         padding: 1rem $gutter.5rem $gutter;
         font-size: 1.5rem;
         color: $secondaryColor;
-        font-weight: $lightWeight
+        font-weight: $normalWeight;
+        text-align: center;
     }
     p {
         padding: .5rem $gutter;
@@ -71,10 +72,45 @@ main {
         height: auto;
       } 
 // .heroWords {
-
 // }
 
+.photoServices {
+    display: grid;
+    section {
+        position: relative;
+        margin: 30px;
+        // transition: transform 1s;
+        // &:hover {transform: rotate(2deg);}
+        h2 {
+            text-align: center;
+            font-weight: $lightWeight;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        img:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
 
+.photoCustomer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section {
+        padding: 7px;
+        img{
+            width: 100%;
+            height: auto;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            transition: transform 1s;
+            &:hover {transform: rotate(15deg);}
+        }
+    } //end of SECTION
+} //end of parent for customer photos
 
 
 /* --------------------------- FOOTER --------------------------- */
